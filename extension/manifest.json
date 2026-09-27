@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "RTL Chat for ZCode",
+  "version": "0.2.3",
+  "description": "راست‌به‌چین کردن پیام‌ها، ترنسکریپت و کامپوزر فارسی در ZCode Desktop",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>", "file:///*"],
+      "js": ["rtl-chat.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "host_permissions": ["<all_urls>", "file:///*"]
+}
